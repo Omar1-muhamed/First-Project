@@ -1,0 +1,268 @@
+body {
+    background-image: linear-gradient(20deg, rgb(17, 38, 40) 5%,
+            rgb(19, 58, 64) 60%,
+            rgb(27, 34, 34)30%,
+            rgb(0, 0, 0) 5%);
+    color: white;
+    height: 100vh;
+    max-width: 20000px;
+    min-width: 300px;
+
+}
+
+hr {
+    margin-bottom: 10px;
+    background-color: black;
+    height: 10px;
+}
+
+h1 {
+    position: relative;
+    top: 50px;
+    color: lightblue;
+    font-size: 1.9em;
+    text-shadow: 0px 0px 5px white;
+    margin: 10 0;
+    padding: 5px;
+    transition-duration: 3s;
+    transition-property: all;
+    width: 220px;
+    z-index: 1;
+
+}
+
+h1:hover {
+    transform: rotate(5turn);
+    font-size: 1.8em;
+}
+
+
+/* nav */
+
+nav {
+    background-image: linear-gradient(20deg, rgb(17, 38, 40), rgb(35, 91, 100), rgb(27, 34, 34), rgb(0, 0, 0));
+    position: fixed;
+    top: 0;
+    z-index: 20;
+    width: 100%;
+    height: 60px;
+    box-shadow: 0px 0px 18px 9px inset #add8e65c;
+}
+
+nav::after {
+    content: "";
+    height: 2px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(to right, white,
+            #ccc4c4,
+            rgb(158, 143, 143),
+            rgb(156, 156, 156),
+            white);
+}
+
+
+/* ul stylimg */
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+}
+
+nav ul li {
+    font-size: 1.3em;
+}
+
+
+a {
+    color: white;
+    font-size: 1em;
+    text-decoration: none;
+    transition-duration: 1s;
+    transition-property: all;
+}
+
+a:hover {
+    color: red;
+    font-size: 0.9em;
+
+}
+
+
+/* image styling */
+img {
+    display: block;
+    width: 800px;
+    height: 800px;
+    object-fit: cover;
+    border-radius: 15%;
+    margin-left: 0px;
+    position: relative;
+    box-shadow: 0px 0px 21px 5px white;
+}
+
+figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 10px;
+    padding: 7px;
+}
+
+figcaption {
+    font-size: 2.9em;
+    margin-bottom: 30px;
+    text-shadow: 0px 0px 5px rgb(209, 209, 209);
+
+}
+
+.container {
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    width: 800px;
+    height: 800px;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 0px 0px 5px lightblue;
+    color: lightblue;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    font-size: 2.3em;
+    font-weight: bold;
+    transition: opacity 0.2s ease-in-out;
+    top: 0;
+    left: 0;
+    border-radius: 15%;
+}
+
+.overlay:hover {
+    opacity: 1;
+}
+
+
+.only {
+    font-size: 6em;
+    text-shadow: 0px 2px 5px lightblue;
+    position: relative;
+}
+
+.only::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    border-style: solid;
+    border-color: rgb(125, 196, 219);
+    border-radius: 50%;
+    border-left: transparent;
+    border-right: transparent;
+    border-bottom: transparent;
+}
+
+/* table */
+
+
+table {
+    width: 100%;
+    height: 700px;
+    position: relative;
+}
+
+table thead {
+    background-color: black;
+    font-size: 2.9em;
+}
+
+table tbody {
+    background-image: linear-gradient(20deg, rgb(17, 38, 40),
+
+            rgb(120, 144, 148),
+            rgb(48, 62, 62),
+            rgb(0, 0, 0));
+    ;
+    font-size: 2.3em;
+    padding: 20px;
+    font-family: sans-serif;
+}
+
+table tfoot {
+    background-image: linear-gradient(20deg, rgb(17, 38, 40),
+
+            rgb(120, 144, 148),
+            rgb(48, 62, 62),
+            rgb(0, 0, 0));
+    font-size: 2.3em;
+    color: pink;
+    text-shadow: 0px 0px 5px rgb(203, 86, 105);
+    text-align: center;
+    height: 70px;
+}
+
+.heart {
+    color: red;
+}
+
+.days {
+    font-style: italic;
+}
+
+
+/* p editing */
+
+p {
+    text-align: center;
+    font-size: 2.5em;
+}
+
+.op {
+    color: black;
+    text-shadow: 0px 0px 5px white;
+    font-size: 1.4em;
+}
+
+/* last links */
+
+
+
+#connections {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    list-style: none;
+    font-size: 3em;
+    margin-left: 45%;
+    height: 20vh;
+    transition: all 0.4 ease-in-out;
+}
+
+#connections a:hover {
+    color: lightblue;
+    font-size: 1.2em;
+    margin-left: 15px;
+    transform: translate(100px, 100px) scale(30px);
+}
+
+.money {
+    font-weight: bold;
+    color: red;
+    font-style: italic;
+}
+
+.hr {
+    margin-top: 500px;
+}
+
+.hra {
+    margin-top: 500px;
+    margin-bottom: 500px;
+}
